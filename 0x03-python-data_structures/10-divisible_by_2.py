@@ -6,4 +6,4 @@ def divisible_by_2(my_list=[]):
             x_boolist[y] = True
         else:
             x_boolist[y] = False
-    return (boolist)
+    return (x_boolist)
