@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-class Square:
+"""handle a Rectangle object"""
+
+
+class Rectangle:
+    """Rectangle object"""
     pass
