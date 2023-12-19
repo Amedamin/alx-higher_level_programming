@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""handle a Rectangle object"""
+"""A module for square"""
 
 
-class Rectangle:
-    """Rectangle object"""
+class Square:
+    """Represent a square."""
     pass
