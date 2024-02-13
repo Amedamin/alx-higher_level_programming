@@ -1,4 +1,4 @@
---this script is to Save this SQL script in a file named 'average_temperature.sql'
+--this script is to Save this SQL script in a file 
 SELECT city, AVG(value) AS avg_temp
 FROM temperatures
 GROUP BY city
