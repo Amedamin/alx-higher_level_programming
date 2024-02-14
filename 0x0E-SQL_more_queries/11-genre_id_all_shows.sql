@@ -1,8 +1,6 @@
--- Behold! An epic saga of shows awaits within the realms of hbtn_0d_tvshows.
--- Embark on this journey to discover the enchanting fusion of titles and genres.
+-- a script that lists all shows contained in the database hbtn_0d_tvshows.
 SELECT 
-    tv_shows.title 
-    tv_show_genres.genre_id
+    tv_shows.title, tv_show_genres.genre_id
 FROM 
     tv_shows 
 LEFT JOIN 
