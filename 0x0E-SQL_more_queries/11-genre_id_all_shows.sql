@@ -1,8 +1,8 @@
 -- Behold! An epic saga of shows awaits within the realms of hbtn_0d_tvshows.
 -- Embark on this journey to discover the enchanting fusion of titles and genres.
 SELECT 
-    tv_shows.title AS 'Show Title', 
-    tv_show_genres.genre_id AS 'Genre ID'
+    tv_shows.title 
+    tv_show_genres.genre_id
 FROM 
     tv_shows 
 LEFT JOIN 
