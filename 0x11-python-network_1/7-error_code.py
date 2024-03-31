@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-Sends a request to the given URL and displays the body of the response.
+Sends a request to the given URL.
 """
 import requests
 import sys
 
 
 if __name__ == "__main__":
-    URL = sys.argv[1]
-    res = requests.get(URL)
+    U = sys.argv[1]
+    r = requests.get(U)
 
-    if res.status_code >= 400:
+    if r.status_code >= 400:
         print(f"Error code: {res.status_code}")
     else:
-        print(res.text)
+        print(r.text)

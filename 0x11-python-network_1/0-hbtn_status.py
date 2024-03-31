@@ -4,16 +4,16 @@ import urllib.request
 
 
 def main():
-    URL = 'https://alx-intranet.hbtn.io/status'
+    U = 'https://alx-intranet.hbtn.io/status'
 
-    REQ = urllib.request.Request(URL)
+    R = urllib.request.Request(U)
 
-    with urllib.request.urlopen(REQ) as response:
-        CON = response.read()
+    with urllib.request.urlopen(R) as r:
+        C = r.read()
         print("Body response:")
-        print("\t- type:", type(CON))
-        print("\t- content:", CON)
-        print("\t- utf8 content:", CON.decode('utf-8'))
+        print("\t- type:", type(C))
+        print("\t- content:", C)
+        print("\t- utf8 content:", C.decode('utf-8'))
 
 
 if __name__ == "__main__":
