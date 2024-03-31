@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Python script that takes in a URL"""
 from urllib import request, error
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":

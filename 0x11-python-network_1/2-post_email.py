@@ -3,7 +3,7 @@
 Sends a POST request with an email parameter
 """
 from urllib import request, error
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
