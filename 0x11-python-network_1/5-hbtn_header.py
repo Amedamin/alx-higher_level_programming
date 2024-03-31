@@ -3,12 +3,12 @@
 Displays the value of the X-Request-Id variable
 found in the header of the response.
 """
-import sys
 import requests
+from sys import argv
 
 
 if __name__ == "__main__":
-    U = sys.argv[1]
+    U = argv[1]
     r = requests.get(U)
 
     h = r.headers.get("X-Request-Id")

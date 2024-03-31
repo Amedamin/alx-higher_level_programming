@@ -2,18 +2,17 @@
 """
 Sends a POST request with an email parameter
 """
-
-import urllib.parse
-import urllib.request
+from urllib import request, error
 import sys
 
+
 if __name__ == "__main__":
-    U = sys.argv[1]
-    email = sys.argv[2]
+    U = argv[1]
+    email = argv[2]
 
     D = urllib.parse.urlencode({'email': email}).encode('utf-8')
-    R = urllib.request.Request(U, D)
+    R = request.Request(U, D)
 
-    with urllib.request.urlopen(R) as r:
+    with request.urlopen(R) as r:
         B = r.read().decode('utf-8')
         print(B)
